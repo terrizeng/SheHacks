@@ -1,0 +1,304 @@
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+/*
+.content-index {
+  margin-top:70px;
+}
+.project-grid{
+  font-size:0;
+  margin-top: auto;
+  width:945px;
+}
+
+.content-item {
+  position: relative;
+  width:300px;
+  height:300px;
+  border-radius:5px;
+  overflow: hidden;
+  margin: 0 7.5px 15px 7.5px;
+  padding:0;
+  display:inline-block;
+
+}.overlay-content h2{
+  font-weight:600;
+  letter-spacing:1.75px;
+}
+
+.overlay-content p {
+  margin-top: 15px;
+  margin-right: 15px;
+  padding: 0;
+  font-family: 'IBM Plex Sans Condensed';
+  font-size:12px;
+  line-height:2em;
+  font-weight:450;
+  letter-spacing:1px;
+}
+
+.content-item .overlay-content {
+  bottom: 0;
+  color: #fafafa;
+  left: 0;
+  opacity: 0;
+  padding: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-family: 'IBM Plex Sans Condensed';
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  background: rgba(100, 100, 100, 0.85);
+  border-radius:5px;
+}
+
+.content-item .overlay-content h2 {
+  border-bottom: 2px solid #fafafa;
+  padding: 0 0 12px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.content-item:hover .overlay-content {
+  opacity: 1;
+}
+*/
+
+/* INDEX */
+
+#hihi {
+}
+.menu {
+    overflow: hidden;
+    width: 25%;
+    float: right;
+}
+
+.menu a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline;
+    text-decoration: none;
+
+    color: black;
+    font-family: 'IBM Plex Sans Condensed';
+}
+
+
+.menu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+
+.about {
+float: left;
+line-height: 1.5;
+padding-left: 8%;
+padding-top: 15%;
+}
+
+.titlename {
+  font-size: 60px;
+  font-weight: lighter;
+  color: black;
+  font-family: 'IBM Plex Sans Condensed';
+  text-align: left;
+
+}
+.description{
+  font-size: 16px;
+  padding-left: 10;
+  color: black;
+  font-family: 'IBM Plex Sans Condensed';
+}
+
+.description a {
+  font-family: 'IBM Plex Sans Condensed';
+  text-decoration: none;
+  color: #FF9494;
+}
+
+.description a:hover {
+  text-decoration: none;
+  color: #FFD6D6;
+}
+
+.description a:visited {
+  text-decoration:none;
+}
+
+.aboutme {
+  background-color: #A3E3FF;
+}
+
+#top {
+    width: 100%;
+    height: 450px;
+    margin: auto;
+}
+
+#top_left {
+    width: 60%;
+    height: 450px;
+    float: left;
+}
+
+#top_right{
+    margin-left: 100%;
+    display:inline;
+    height: 450px;
+    padding-top: 10%;
+    padding-bottom: 0px;
+}
+
+#first_reverse {
+    width: 60%:
+    height: 466px;
+    float: left;
+}
+
+#first_reverse_pom {
+    width: 60%:
+    height: 466px;
+    float: left;
+    margin-left: 50px;
+}
+
+#second_reverse {
+    margin-left: 50%;
+    height:466px;
+}
+
+/*
+.badge-div {
+    width: 49%;
+    display: inline-block;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.badge-div:hover{
+    background-color: #F1F1F1;
+}
+
+.image-divs{
+    width:80%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.image-box {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    margin-top: 2%
+}
+
+.image-divs h2{
+    font-family: 'IBM Plex Sans Condensed';
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+    color: #4A4A4A;
+
+}
+
+.image-divs p {
+    font-family: 'IBM Plex Sans Condensed';
+    padding-top: 0;
+    margin-top: 0;
+    text-decoration: none;
+    color: #4A4A4A;
+
+}
+
+.case_number {
+    font-family: 'IBM Plex Sans Condensed';
+    font-size:  62px;
+    color: #BFBFBF;
+    opacity: 0.8;
+
+}
+
+.case_study_botton {
+    background-color: #979797;
+    color: white;
+    width: 150px;
+    height: 40px;
+    font-family: 'IBM Plex Sans Condensed';
+    font-size: 14px;
+}
+
+.case_title{
+    font-family: 'IBM Plex Sans Condensed';
+    font-size: 52px;
+    color: #F56F68;
+}
+
+.case_title_shopify{
+    font-family: 'IBM Plex Sans Condensed';
+    font-size: 52px;
+    color: #9C6ADE;
+}
+
+.case_title_intersect{
+    font-family: 'IBM Plex Sans Condensed';
+    font-size: 52px;
+    color: #1EB4E2;
+}
+
+.case_title_pom {
+    font-family: 'IBM Plex Sans Condensed';
+    font-size: 52px;
+    color: #F79626;
+}
+
+.case_time{
+    font-family: 'IBM Plex Sans Condensed';
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 70px; ;
+    margin-bottom: 0px;
+}
+
+.case_description{
+    font-family: 'IBM Plex Sans Condensed';
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0;
+    margin-right: 30%;
+}
+
+.case_header {
+    height: 50px;
+    margin: 0;
+    position: relative;
+}
+
+.case_number_div {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 50px;
+}
+
+.case_title_div {
+    position: absolute;
+    z-index: 2;
+    left: 15;
+    top: 30;
+    height: 50px;
+
+}
+*/

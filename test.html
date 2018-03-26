@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<!-- Theme Styling -->
+		<link rel="stylesheet" href="theme.css">
+
+		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed|Roboto+Mono" rel="stylesheet">
+
+		<!-- Cara Bot -->
+    <meta charset="utf-8">
+    <title>Chat with Cara Bot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/botui/build/botui.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/botui/build/botui-theme-default.css" />
+
+  </head>
+  <body>
+		<div class="nav-menu">
+				<div id = "navigation">
+				 <div class = "menu" id = "mymenu">
+
+					 <a href = "index.html"> HOME</a>
+					 <a href = "about.html"> ABOUT ME </a>
+					 <a href = "crisis.html"> IN CRISIS?</a>
+				 </div>
+			 </div>
+	</div>
+    <div class="botui-app-container" id="hello-world">
+      <bot-ui></bot-ui>
+    </div>
+    <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/botui/build/botui.js"></script>
+	<script>
+
+      var botui = new BotUI('hello-world');
+
+      botui.message.add({
+				delay:500,
+        content: 'Hi! My name is Cara!'
+
+      }).then(function () { // wait till previous message has been shown.
+					botui.message.add({ // show a message
+					delay:500,
+				  content: 'How are you today?'
+				});
+
+			}).then(function () {
+				 return  botui.action.button({
+					delay:1000,
+	  			action: [{ // show buttons
+	      		text: 'Good',
+	      		value: 'good'
+					},{
+						text: 'Stressed',
+						value: 'stressed'
+					},{
+						text: 'Sad',
+						value: 'sad'
+					}]
+			})
+		}).then(function (res) {
+
+		if (res.value == 'good'){
+				botui.message.add({
+				delay: 500,
+				content:'Awesome! Hope [this](http://cuteoverload.com/) makes it even better'
+			})
+			end();
+		} else if (res.value=='sad'){
+			botui.message.add({
+				delay: 500,
+				content: ':( here is a calm [playlist](https://8tracks.com/cookc3/winter-calm). Hope you feel better soon'
+			})
+		} else if (res.value =='stressed'){
+			botui.message.add({
+				delay:500,
+				content:'Oh no! maybe this will help you [destress](https://29a.ch/sandbox/2011/neonflames/)'
+
+			});
+		}
+	})
+/*
+	var watHappen = function(){
+		botui.action.text({
+		human: true;
+		action: {
+			placeholder: 'What happened'
+		}).then(function(res)){
+			console.log(res.value);
+		});
+	});
+}
+*/
+
+
+</script>
+</html>
